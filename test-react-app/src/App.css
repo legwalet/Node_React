@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+}
+
+.React-app-logo {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .React-app-logo {
+    animation: React-app-logo-spin infinite 20s linear;
+  }
+}
+
+.sn-logo {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #15233E;
+}
+
+.App-link {
+  color: #F6AF1B;
+  text-decoration: none;
+}
+
+@keyframes React-app-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.React-text {
+  font-size: 0.5rem;
+  margin-top: 10rem;
+}
