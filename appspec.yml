@@ -1,6 +1,6 @@
   
 version: 0.0
-os: Ubuntu
+os: linux
 files:
   - source: /
     destination: /home/$USER/
