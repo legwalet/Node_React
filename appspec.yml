@@ -3,7 +3,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/$USER/
+    destination: /home/
 hooks:
   AfterInstall:
     - location: scripts/npm-install.sh
