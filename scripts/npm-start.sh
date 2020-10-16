@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /home/$USER/test-react-app
+cd /home/test-react-app
 npm start
