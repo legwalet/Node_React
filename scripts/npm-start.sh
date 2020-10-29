@@ -1,3 +1,3 @@
 #!/bin/bash
 cd /home/test-react-app
-npm start
+sudo npm start
