@@ -5,10 +5,10 @@ files:
     destination: /home/
 hooks:
   AfterInstall:
-    - location: scripts/npm-install.sh
-      runas: root
+    - location: scripts/test-app.sh
+      runas: ubuntu
       timeout: 300
   ApplicationStart:
-    - location: scripts/npm-start.sh
-      runas: root
+    - location: scripts/test-react.sh
+      runas: ubuntu
       timeout: 60
