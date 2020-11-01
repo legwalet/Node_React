@@ -2,16 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/
-hooks:
-  AfterInstall:
-    - location: scripts/test-app.sh
-      runas: ubuntu
-      timeout: 300
-  ApplicationStart:
-    - location: scripts/test-react.sh
-      runas: ubuntu
-      timeout: 60
+    destination: /home/ubuntu/
 permissions:
   - object: scripts/
     pattern: "*.sh"
@@ -19,4 +10,14 @@ permissions:
     group: ubuntu
     mode: 655
     type:
-      - file
+      - file  
+hooks:
+  AfterInstall:
+    - location: scripts/runservice.sh
+      runas: ubuntu
+      timeout: 300
+  ApplicationStart:
+    - location: scripts/startserver.sh
+      runas: ubuntu
+      timeout: 60
+
