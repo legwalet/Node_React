@@ -1,4 +1,4 @@
 #!/bin/bash
 cd /home/ubuntu/test-app-server
-sudo npm install express
+sudo npm install -g express
 
